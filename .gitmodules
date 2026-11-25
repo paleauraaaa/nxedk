@@ -1,0 +1,7 @@
+[submodule "src/picolibc"]
+	path = src/picolibc
+	url = https://github.com/paleauraaaa/picolibc.git
+[submodule "src/mimalloc"]
+	path = src/mimalloc
+	url = https://github.com/paleauraaaa/mimalloc.git
+	branch = nxedk

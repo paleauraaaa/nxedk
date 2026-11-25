@@ -1,0 +1,1 @@
+int nxedk_init(void);

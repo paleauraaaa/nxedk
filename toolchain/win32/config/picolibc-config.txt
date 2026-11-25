@@ -1,0 +1,10 @@
+[constants]
+xbox360_headers = '@DIRNAME@/../../../include'
+llvm_bin = '@DIRNAME@/../bin/llvm'
+clang_resource_dir = '@DIRNAME@/../../include/clang/23'
+
+[binaries]
+c = [llvm_bin / 'clang.exe', '-resource-dir', clang_resource_dir] + xbox360_target
+cpp = [llvm_bin / 'clang++.exe', '-resource-dir', clang_resource_dir] + xbox360_target
+ar = llvm_bin / 'llvm-ar.exe'
+strip = llvm_bin / 'llvm-strip.exe'

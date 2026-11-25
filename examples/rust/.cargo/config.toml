@@ -1,0 +1,11 @@
+[env]
+NXEDK_ROOT = { value = "../..", relative = true }
+NXEDK_CLANG_RESOURCE_DIR = { value = "../../toolchain/include/clang/23", relative = true }
+NXEDK_PICOLIBC_BUILD_DIR = { value = "../../build/picolibc", relative = true }
+MIMALLOC_DEFINES = "MI_PROFILE=0 MI_STATS=0"
+
+[build]
+target = "powerpc64-microsoft-xbox360"
+
+[target.powerpc64-microsoft-xbox360]
+linker = "lld-link"

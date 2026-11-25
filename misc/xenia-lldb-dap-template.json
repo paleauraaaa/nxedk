@@ -1,0 +1,12 @@
+{
+  "name": "Attach to Xenia guest",
+  "type": "lldb-dap",
+  "request": "attach",
+  "program": "${workspaceFolder}\\build\\game.exe",
+  "gdb-remote-hostname": "127.0.0.1",
+  "gdb-remote-port": 1234,
+  "stopOnEntry": true,
+  "preRunCommands": [
+    "!settings set target.object-map \"game\" \"${workspaceFolder}\\build\\game.exe\""
+  ]
+}

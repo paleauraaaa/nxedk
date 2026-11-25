@@ -1,0 +1,11 @@
+[package]
+name = "xbox360-env"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+windef-sys = { path = "../native/windef-sys" }
+xboxkrnl-sys = { path = "../native/xboxkrnl-sys" }
+xam-sys = { path = "../native/xam-sys" }
+mimalloc = { path = "../mimalloc/contrib/rust", features = ["override"] }
+libc = { git = "https://github.com/paleauraaaa/libc.git", "branch" = "xbox360" }
